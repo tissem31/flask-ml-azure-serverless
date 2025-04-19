@@ -20,10 +20,8 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = (
-        "<h3>Sklearn Prediction Home: From Azure Pipelines (Continuous Delivery)</h3>"
-    )
-    return html
+    html = "<h3>Sklearn Prediction Home: From Azure Pipelines (Continuous Delivery)</h3>"
+    return html.format(format)
 
 @app.route("/predict", methods=["POST"])
 def predict():

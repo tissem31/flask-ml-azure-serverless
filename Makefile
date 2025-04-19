@@ -19,11 +19,11 @@ docker-build:
 	docker build -t my-python-flask-app .
 
 docker-run:
-	docker run -p 5000:5000 my-python-flask-app
+	docker run -p 8000:8000 my-python-flask-app
 
 docker-debug:
 	#to debug inside the container
-	docker run -d -p 5000:5000 --name my-flask-container my-python-flask-app
+	docker run -d -p 8000:8000 --name my-flask-container my-python-flask-app
 	docker exec -it my-flask-container bash
 
 docker-clean:

@@ -11,7 +11,7 @@ test:
 	#python -m pytest --nbval notebook.ipynb
 
 
-#lint:
+lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	#pylint --disable=R,C,W1203,W0702 app.py
 
